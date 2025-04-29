@@ -1,7 +1,7 @@
 body {
     background-repeat: no-repeat;
     background-position: center top; /* Center horizontally, align top */
-    background-size: contain; /* Fit the entire image within the viewport */
+    background-size:cover; /* Fit the entire image within the viewport */
     background-color: #ff6f61; /* Fallback color */
     font-family: 'Pacifico', cursive;
     display: flex;
@@ -64,14 +64,14 @@ body {
   }
   
   .balloon-left {
-    left: 30%; /* Start off-screen to the left */
+    left: 10%; /* Start off-screen to the left */
     transform-origin: bottom center; /* Rotate from the bottom */
     animation-name: float-left;
     animation-delay: var(--delay); /* Use the inline delay */
   }
   
   .balloon-right {
-    right: 30%; /* Start off-screen to the right */
+    right: 10%; /* Start off-screen to the right */
     transform-origin: bottom center; /* Rotate from the bottom */
     animation-name: float-right;
     animation-delay: var(--delay); /* Use the inline delay */
@@ -112,13 +112,16 @@ body {
   }
   
   /* Responsive adjustments for balloons */
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) and(max-height: 768px) {
+    body{
+        background-size:contain;
+    }
     .party-text {
         font-size: 7vw; /* Adjust for smaller screens */
         margin-top: 64%;
       }
       .balloon-left {
-        left: 10%; /* Start off-screen to the left */
+        left: 0%; /* Start off-screen to the left */
         transform-origin: bottom center; /* Rotate from the bottom */
         animation-name: float-left;
         animation-delay: var(--delay); /* Use the inline delay */
