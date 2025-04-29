@@ -6,7 +6,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body background="9.png">
-        <span class="party-text"><span id="guestName"></span></span>
+    <div class="balloon balloon-left" style="--delay: 0s;">🎈</div>
+    <div class="balloon balloon-left" style="--delay: 1s;">🎈</div>
+    <div class="balloon balloon-right" style="--delay: 0.5s;">🎈</div>
+    <div class="balloon balloon-right" style="--delay: 1.5s;">🎈</div>
+    <span class="party-text"><span id="guestName"></span></span>
   <script>
     document.getElementById("guestName").textContent = localStorage.getItem("guestName") || "Guest";
   </script>
