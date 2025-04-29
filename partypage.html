@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to the Party!</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="party-page">
-        <img src="9.png" alt="Party Image" class="party-image">
-        <!-- <div class="party-header"><h1>🎉 Welcome to the Party, <span id="guestName"></span>! 🎈</h1></div> -->
+<body background="9.png">
+        <span class="party-text"><span id="guestName"></span></span>
   <script>
-    document.getElementById("guestName").textContent =
-      localStorage.getItem("guestName") || "Guest";
+    document.getElementById("guestName").textContent = localStorage.getItem("guestName") || "Guest";
   </script>
 </body>
 </html>
