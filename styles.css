@@ -20,6 +20,7 @@ body {
     border-radius: 1rem;
     box-shadow: 0 0 30px rgba(0,0,0,0.2);
     text-align: center;
+    margin-top: 40%;
   }
   input, button {
     display: block;
@@ -34,8 +35,9 @@ body {
     font-size: 3.5vw; /* Adjust as needed */
     font-weight: bold;
     text-align: center; /* Center the text */
-    /* margin-top: 15vh; Adjust top margin */
-    margin-top: 28%;
+    align-content: center;
+    align-items: center;
+    margin-top: 58vh; 
     z-index: 10; /* Ensure it's above the background */
     color: rgb(118, 33, 33); /* Ensure text is readable against the background */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better contrast */
@@ -118,7 +120,7 @@ body {
     }
     .party-text {
         font-size: 7vw; /* Adjust for smaller screens */
-        margin-top: 64%;
+        /* margin-top: 64%; */
       }
       .balloon-left {
         left: 0%; /* Start off-screen to the left */
