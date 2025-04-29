@@ -1,5 +1,9 @@
 body {
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    /* background: linear-gradient(to right, #ffecd2, #fcb69f); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ff6f61;
     font-family: 'Pacifico', cursive;
     display: flex;
     justify-content: center;
@@ -22,14 +26,14 @@ body {
     border-radius: 0.5rem;
     border: none;
   }
-  .party-image{
-    width: 100%;
-    height: auto;
-    /* padding: 1rem; */
-    /* margin-top: 1rem; */
-    /* top: 2rem; */
-    /* margin-bottom: 1rem; */
-    
+  .party-text{
+    position: absolute;
+    font-size: 8vw;
+    font-weight: bold;
+    margin-left: 0%;
+    margin-top: 8.5%;
+    align-items: center;
+    z-index: 1000;
   }
   button {
     background-color: #ff6f61;
