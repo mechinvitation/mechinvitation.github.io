@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  input, button {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+  }
+  .party-image{
+    width: 100%;
+    height: auto;
+    /* padding: 1rem; */
+    /* margin-top: 1rem; */
+    /* top: 2rem; */
+    /* margin-bottom: 1rem; */
+    
+  }
+  button {
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+  }
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
