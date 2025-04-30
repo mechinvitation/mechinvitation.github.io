@@ -120,7 +120,8 @@ Rabi Marndi 2212100096
 Satwick Somya 2212100097
 Jayadev Biswal 2212100098
 D Sai Arpan 2212100099
-Anniket P Nanda 2212100100`;
+Anniket P Nanda 2212100100
+Creator 2211100817`;
 
 const lines = rawData.trim().split('\n');
 const names = [];
@@ -133,13 +134,9 @@ for (let i = 0; i < lines.length; i++) {
   names.push(name);
   regdNos.push(regdNo);
 }
-
-// console.log("Names:", JSON.stringify(names, null, 2));
-// console.log("Registration Numbers:", JSON.stringify(regdNos, null, 2));
-
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
-    const enteredRegdNo  = document.getElementById("name").value;
+    const enteredRegdNo  = document.getElementById("code").value;
     const regdNoIndex = regdNos.indexOf(enteredRegdNo);
     if (regdNoIndex !== -1) {
       const guestName = names[regdNoIndex];
