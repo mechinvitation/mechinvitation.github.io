@@ -61,12 +61,12 @@
   }
   .party-text{
     position: absolute; /* Make it relative to flow with the document */
-    font-size: 3.5vw; /* Adjust as needed */
+    font-size: 6vw; /* Adjust as needed */
     font-weight: bold;
     text-align: center; /* Center the text */
     align-content: center;
     align-items: center;
-    margin-top: 66%; 
+    margin-top: 65%; 
     z-index: 10; /* Ensure it's above the background */
     color: rgb(118, 33, 33); /* Ensure text is readable against the background */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better contrast */
@@ -149,12 +149,12 @@
   }
   
   /* Responsive adjustments for balloons */
-  @media screen and ((max-width: 768px) and(max-height: 768px)) {
+  @media screen and ((max-width: 1000px) and(max-height: 1000px)) {
     .party-background{
         background-size:cover;
     }
     .party-text {
-        font-size: 7vw; /* Adjust for smaller screens */
+        font-size: 9vw; /* Adjust for smaller screens */
         padding: 10px 10px 0 10px;
       }
       .balloon-left {
