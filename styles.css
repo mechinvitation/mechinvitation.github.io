@@ -1,21 +1,24 @@
 body {
-    position: relative;
+    background-image: url('9.png');
     background-repeat: no-repeat;
-    background-position: center top; /* Center horizontally, align top */
-    background-size:contain; /* Fit the entire image within the viewport */
+    background-position: center top; /* Keep your desired position */
+    /* Remove or comment out the background-size property below */
+    background-size: contain;
     background-color: #ff6f61; /* Fallback color */
     font-family: 'Pacifico', cursive;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: flex-start; /* Align items at the top initially */
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    min-height: 100vh; /* Ensure full viewport height */
+    min-height: 100vh;
     margin: 0;
-    padding-bottom: 20vh; /* Add padding at the bottom to see the full image on some screens */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    padding: 10px 10px 0 10px; /* Add padding to the body */
-
+    padding-bottom: 20vh;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* Animation for background color cycling (if you have it) */
+    /* animation: ... ; */
   }
+  
   .login-container {
     background: white;
     padding: 2rem;
@@ -79,6 +82,12 @@ body {
     transform-origin: bottom center; /* Rotate from the bottom */
     animation-name: float-right;
     animation-delay: var(--delay); /* Use the inline delay */
+  }
+  @keyframes background-cycle {
+    0% { background-color: #ff6f61; } /* Coral */
+    33% { background-color: #88d8b0; } /* Mint Green */
+    66% { background-color: #f4acb7; } /* Dusty Rose */
+    100% { background-color: #a8dadc; } /* Light Blue */
   }
   @keyframes float-left {
     0% {
