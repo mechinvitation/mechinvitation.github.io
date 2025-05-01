@@ -1,5 +1,5 @@
 .party-background {
-    background-image: url('9.png');
+    background-image: url('./final_invi_fare.png');
     background-repeat: no-repeat;
     background-position: center top; /* Keep your desired position */
     /* Remove or comment out the background-size property below */
@@ -14,9 +14,6 @@
     margin: 0;
     padding-bottom: 20vh;
     box-sizing: border-box;
-    /* overflow: hidden; */
-    /* Animation for background color cycling (if you have it) */
-    /* animation: ... ; */
   }
   .login-body {
     font-family: sans-serif;
@@ -66,10 +63,11 @@
     text-align: center; /* Center the text */
     align-content: center;
     align-items: center;
-    margin-top: 65%; 
+    margin-top: 67.5%; 
     z-index: 10; /* Ensure it's above the background */
-    color: rgb(118, 33, 33); /* Ensure text is readable against the background */
+    color: rgb(9, 9, 9); /* Ensure text is readable against the background */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better contrast */
+    font-family: "Tangerine", cursive;
   }
   button {
     background-color: #ff6f61;
@@ -154,7 +152,7 @@
         background-size:cover;
     }
     .party-text {
-        font-size: 9vw; /* Adjust for smaller screens */
+        font-size: 4vw; /* Adjust for smaller screens */
         padding: 10px 10px 0 10px;
       }
       .balloon-left {
